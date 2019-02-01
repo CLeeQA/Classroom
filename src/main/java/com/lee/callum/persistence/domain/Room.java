@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Classroom {
+public class Room {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
@@ -16,7 +16,7 @@ public class Classroom {
 
 	private String trainees;
 
-	public Classroom(Long classroomID, String trainer, String trainees) {
+	public Room(Long classroomID, String trainer, String trainees) {
 		this.classroomID = classroomID;
 		this.trainer = trainer;
 		this.trainees = trainees;
